@@ -9,7 +9,7 @@ Fonts are separated by a & */
   --primary-color: #8ecae6   ;
   --secondary-color: #219ebc ;
   --accent1-color: #023047;
-  --accent2-color: white;
+  --accent2-color: #8e8e8e;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Alegreya+Sans";
@@ -21,10 +21,10 @@ Fonts are separated by a & */
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #000000  ;
-  --nav-link-color: #393d94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-link-color: #8ecae6;
+  --nav-background-color: #219ebc;
+  --nav-hover-link-color: #023047;
+  --nav-hover-background-color: #8e8e8e;
 }
 
 
