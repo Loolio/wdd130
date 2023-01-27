@@ -1,3 +1,9 @@
-header {
-    background-color: brown;
+body {
+    background-color: orange;
+}
+
+h1 {
+    color: navy;
+    background-image: blue;
+    margin-left:20px;
 }
