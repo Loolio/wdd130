@@ -1,13 +1,13 @@
 #content {
     max-width: 1600px;
     margin: 0 auto;
-    text-align: center;
 }
 nav a {
     text-align: center;
     color: blue;
     text-decoration: none;
 }
+
 #hero-msg h1, #hero-msg h4{
     text-align: center;
     width: 100%;
@@ -23,7 +23,7 @@ main section {
     background-color: #A4B494;
 }
 body {
-    background-color: #fcfbfb;
+    background-color: #2F4F4F;
 }
 header {
     background-color: #291528;
@@ -43,7 +43,6 @@ nav a:hover {
     color: white;
 }
 main section {
-    background-color: #284B63;
     color: white;
 }
 .home-title{
@@ -62,15 +61,16 @@ footer a:hover {
 }
 .logo {
     width: 80px;
-    
+}
+.icon {
+    width: 80px;
 }
 #hero-img {
     width: 100%;
 }
-footer p{
-    font-size: 1.2em;
-}
+
 footer p a:hover {
+    font-size: 1.2em;
     text-decoration: underline;
 }
 
