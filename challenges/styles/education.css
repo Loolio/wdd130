@@ -11,6 +11,9 @@ h1 {
 h2{
     color: #ffffff;
 }
+h2:hover {
+    color:#000;
+}
 p {
     text-align: left;
 }
@@ -25,5 +28,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 50%;
+}
+main {
+    max-width: 600px;
+    margin: 0 auto;
 }
