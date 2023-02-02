@@ -23,14 +23,13 @@ main section {
     background-color: #A4B494;
 }
 body {
-    background-color: #2F4F4F;
+    background-color:  #fcfbfb;
 }
 header {
-    background-color: #291528;
-    
+    background-color: rgba(20, 30, 13, .7);
 }
 nav a:hover {
-    background-color: #8e8e8e;
+    background-color: black;
     color: #d9c2a3;
 }
 .book, .join {
