@@ -1,18 +1,22 @@
 
 
 .center{
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-* {
+div {
     box-sizing: border-box;
 }
 .column{
-    float: left;
-    width: 10%;
+    width: 5%;
     padding: 5px;
     background-color: lightgray;
+    display: inline-block;
+}
+
+img {
+    border-radius: 25px;
 }
 
