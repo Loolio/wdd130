@@ -1,0 +1,19 @@
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+h1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: center;
+}
+aside{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
