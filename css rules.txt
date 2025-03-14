@@ -38,7 +38,19 @@ multiple selectors p, li {}
 CSS: all about boxes
 Setting size, color, and position. 
 
-Box model: content, padding, border, and margin
+Box model: content, padding, border, and margin.
+
+content: text
+padding - space around the content
+border - solid line that is just outside the padding
+margin - space around the outside the padding. 
+
+we use;
+width (of an element)
+background color - the color behind an element's content and padding.
+color - the color of an element's content (usually text).
+text-shadow - sets a drop shadow on the text inside an element.
+display - sets the display mode of an element. 
 
 
 
