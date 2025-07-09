@@ -14,9 +14,9 @@ h1 {
 }
 
 image {
-  width: 150;
+  width: 150px;
   height:auto;
-  border: 1px sold black;
+  border: 1px solid black;
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
@@ -37,9 +37,9 @@ main img {
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb (0 0 0 / 0.2);
+  border: 1px solid rgb (0 0 0.2);
   padding: 1rem;
-  background-color: #eee;
+  background-color: rgba(0, 0, 0, 0.2);
   color: #333;
   text-align: center;
 }
