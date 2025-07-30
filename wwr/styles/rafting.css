@@ -26,8 +26,6 @@ header {
   gap: 20px;
 }
 
-
-
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
