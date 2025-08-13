@@ -3,9 +3,9 @@
   /*Lapis Lazuli */
   --secondary-color: #3a7ca5;
   /*Cerulean */
-  --accent1-color: #d9dcd6;
+  --accent1-color: #2f6690;
   /*Platinum */
-  --accent2-color: #16425b;
+  --accent2-color: #333333;
   /*Indigo dye */
   --heading-font: "Open Sans", sans-serif;
   --body-font: "Inconsolata", monospace;
@@ -192,7 +192,7 @@ nav ul li a:hover {
 footer {
   background-color: var(--accent2-color);
   color: white;
-  text-align: center;
+  text-align: right;
   padding: 20px;
 }
 
@@ -202,7 +202,7 @@ footer p {
 
 footer .socialmedia {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 16px;
 }
 
@@ -215,4 +215,117 @@ footer .socialmedia a img {
 
 footer .socialmedia a img:hover {
   transform: scale(1.2);
+}
+
+.company-info {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.company-info iframe {
+  margin-top: 20px;
+  border: none;
+  /* Removed inline border styling */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.employee-profiles {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.employee-profiles h2 {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  color: var(--primary-color);
+}
+
+
+.team-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-gallery figure {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.profiles figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--accent2-color);
+  font-weight: bold;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 20px 10px;
+  background-color: #eef6f9;
+  color: var(--accent2-color);
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.contact-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 8px;
+  border: 1px solid var(--accent2-color);
+  border-radius: 5px;
+  font-family: var(--body-font);
+  font-size: 0.95rem;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--accent2-color);
 }
