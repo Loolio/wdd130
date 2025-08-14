@@ -73,39 +73,38 @@ nav ul li a:hover {
 
 .hero img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 .hero h1 {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0;
   right: 0;
-  padding: 16px;
+  padding: 8px;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: var(--heading-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
-
 
 .hero article {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 70px;
   right: 70px;
   background-color: rgba(255, 255, 255, 0.6);
   color: black;
-  padding: 16px;
+  padding: 12px;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .hero article img {
   float: right;
-  width: 120px;
+  width: 100px;
   height: auto;
-  margin-left: 16px;
+  margin-left: 12px;
   border-radius: 8px;
 }
 
