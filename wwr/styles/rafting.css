@@ -1,29 +1,26 @@
+/* ================================
+   Root Variables
+================================ */
 :root {
   --primary-color: #2f6690;
-  /*Lapis Lazuli */
+  /* Lapis Lazuli */
   --secondary-color: #3a7ca5;
-  /*Cerulean */
+  /* Cerulean */
   --accent1-color: #2f6690;
-  /*Platinum */
+  /* Platinum */
   --accent2-color: #333333;
-  /*Indigo dye */
+  /* Indigo dye */
   --heading-font: "Open Sans", sans-serif;
   --body-font: "Inconsolata", monospace;
 }
 
+/* ================================
+   Global Reset & Base Styles
+================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-header {
-  background-color: white;
-  color: var(--accent2-color);
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 20px;
 }
 
 body {
@@ -31,6 +28,32 @@ body {
   color: var(--accent1-color);
   background-color: #fff;
   line-height: 1.6;
+}
+
+
+h1 {
+  color: var(--primary-color);
+  /* Deep blue for bold impact */
+  font-family: var(--heading-font);
+}
+
+h2 {
+  color: var(--secondary-color);
+  /* Lighter blue for contrast */
+  font-family: var(--heading-font);
+}
+
+
+/* ================================
+   Header & Navigation
+================================ */
+header {
+  background-color: white;
+  color: var(--accent2-color);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
 }
 
 header img {
@@ -64,49 +87,55 @@ nav ul li a:hover {
   color: white;
 }
 
-/* Hero Section */
+/* ================================
+   Hero Section
+================================ */
 .hero {
-  position: relative;
   text-align: center;
   color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .hero img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  right: 0;
-  padding: 8px;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-family: var(--heading-font);
-  font-size: 1.5rem;
+  border-radius: 8px;
 }
 
 .hero article {
-  position: absolute;
-  bottom: 10px;
-  left: 70px;
-  right: 70px;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: black;
-  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--accent2-color);
+  padding: 16px;
   border-radius: 8px;
-  overflow: hidden;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .hero article img {
   float: right;
-  width: 100px;
+  width: 150px;
+  /* Adjust as needed */
   height: auto;
-  margin-left: 12px;
+  margin-left: 20px;
+  margin-bottom: 10px;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
 
 .hero article h2 {
   font-family: var(--heading-font);
@@ -118,8 +147,9 @@ nav ul li a:hover {
   margin: 0;
 }
 
-
-/* History Section */
+/* ================================
+   History Section
+================================ */
 .history-section {
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -134,13 +164,17 @@ nav ul li a:hover {
 }
 
 .history-section p {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
   color: var(--accent2-color);
   font-size: 1rem;
+  text-align: justify;
 }
 
-/* Adventure Section */
+
+/* ================================
+   Adventure Section
+================================ */
 .adventure-section {
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -186,37 +220,29 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-
-/* Footer */
-footer {
-  background-color: var(--accent2-color);
-  color: white;
-  text-align: right;
+/* ================================
+   Company Info & Map
+================================ */
+.company-info {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-footer p {
-  margin-bottom: 10px;
+.company-info h1 {
+  margin-bottom: 24px;
 }
 
-footer .socialmedia {
-  display: flex;
-  justify-content: right;
-  gap: 16px;
+.company-info h2 {
+  margin-top: 24px;
 }
 
-footer .socialmedia a img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-
-footer .socialmedia a img:hover {
-  transform: scale(1.2);
-}
-
-.map-frame {
+.map-frame,
+.company-info iframe {
   width: 100%;
   height: 300px;
   border: none;
@@ -226,21 +252,9 @@ footer .socialmedia a img:hover {
   margin: 20px auto;
 }
 
-.company-info {
-  font-family: var(--heading-font);
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-  color: var(--primary-color);
-}
-
-.company-info iframe {
-  margin-top: 20px;
-  border: none;
-  /* Removed inline border styling */
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
+/* ================================
+   Employee Profiles
+================================ */
 .employee-profiles {
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -253,7 +267,6 @@ footer .socialmedia a img:hover {
   margin-bottom: 24px;
   color: var(--primary-color);
 }
-
 
 .team-gallery {
   display: flex;
@@ -273,15 +286,16 @@ footer .socialmedia a img:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-
-.profiles figcaption {
+.team-gallery figcaption {
   margin-top: 8px;
   font-size: 0.9rem;
   color: var(--accent2-color);
   font-weight: bold;
 }
 
-/* Contact Form Section */
+/* ================================
+   Contact Form
+================================ */
 .contact-form {
   padding: 20px 10px;
   background-color: #eef6f9;
@@ -294,7 +308,6 @@ footer .socialmedia a img:hover {
   font-size: 1.5rem;
   margin-bottom: 16px;
   color: var(--primary-color);
-
 }
 
 .contact-form form {
@@ -338,4 +351,85 @@ footer .socialmedia a img:hover {
 
 .contact-form button[type="submit"]:hover {
   background-color: var(--accent2-color);
+}
+
+/* ================================
+   Footer
+================================ */
+footer {
+  background-color: var(--accent2-color);
+  color: white;
+  text-align: right;
+  padding: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .socialmedia {
+  display: flex;
+  justify-content: right;
+  gap: 16px;
+}
+
+footer .socialmedia a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+footer .socialmedia a img:hover {
+  transform: scale(1.2);
+}
+
+/* ================================
+   Responsive Design
+================================ */
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  header img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+
+  .hero article {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .hero article img {
+    float: none;
+    display: block;
+    margin: 0 auto 12px;
+    width: 80px;
+  }
+
+  /* Team Gallery */
+  .team-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 }
