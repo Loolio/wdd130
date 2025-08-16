@@ -18,6 +18,40 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Reset default list styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+/* Style for all links */
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #e0e0e0;
+  color: #007BFF;
+}
+
+/* Active link style */
+nav a.active {
+  font-weight: bold;
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+}
+
+
 /* ================================
    Global Reset & Base Styles
 ================================ */
