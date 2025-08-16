@@ -252,15 +252,21 @@ nav ul li a:hover {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  /* Allows wrapping on smaller screens */
+  padding: 20px 0;
 }
 
 .team-gallery figure {
   text-align: center;
-  max-width: 200px;
+  width: 200px;
+  margin: 0;
+  flex: 0 0 auto;
 }
 
 .team-gallery img {
-  width: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -271,6 +277,17 @@ nav ul li a:hover {
   color: var(--accent2-color);
   font-weight: bold;
 }
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+  .team-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
 
 /* ================================
    Contact Form
@@ -641,4 +658,11 @@ table tbody tr:nth-child(even) {
 
 table tbody tr:hover {
   background-color: #e0f0ff;
+}
+
+.grid-layout img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
 }
